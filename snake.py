@@ -21,6 +21,7 @@ class Snake:
             self.snake_body.append(Turtle(shape="square"))
             self.snake_body[-1].color('white')
             self.snake_body[-1].penup()
+            self.snake_body[-1].speed("fastest")
             self.snake_body[-1].goto(-bodyPart * BODY_PART_LEN, 0)
 
 
@@ -55,6 +56,7 @@ class Snake:
         self.snake_body.append(Turtle(shape="square"))
         self.snake_body[-1].color('white')
         self.snake_body[-1].penup()
+        self.snake_body[-1].speed("fastest")
         tail_x,tail_y = self.snake_body[-2].xcor(), self.snake_body[-2].ycor()
         self.snake_body[-1].goto(tail_x, tail_y)
 
