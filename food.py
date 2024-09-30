@@ -1,7 +1,7 @@
 from turtle import Turtle
 import random
-X_LIM = 390
-Y_LIM  = 390
+X_LIM = 380
+Y_LIM  = 380
 
 class Food(Turtle):
     def __init__(self):

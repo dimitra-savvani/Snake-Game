@@ -69,5 +69,13 @@ class Snake:
                 return True
         return False
 
+    def reset(self):
+        for bodyPart in self.snake_body:
+            bodyPart.goto(1000,1000)
+        self.snake_body.clear()
+        self.createsnake()
+        self.head = self.snake_body[0]
+
+
 
 

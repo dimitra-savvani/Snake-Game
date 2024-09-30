@@ -38,8 +38,15 @@ if __name__ == '__main__':
             score.update()
             snake.growtail()
         if snake.wallcollision() or snake.bit_itself():
-            score.game_over()
-            game_is_on = False
+            # score.game_over()
+            score.reset_game()
+            snake.reset()
+            sc.update()
+            # sc.onscreenclick(score.reset_game)
+            # if score.reset:
+            #     pass
+            # else:
+            #     game_is_on = False
 
 
     sc.exitonclick()
