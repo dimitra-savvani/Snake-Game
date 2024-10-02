@@ -15,7 +15,7 @@ The project consists of four Python files:
 
 ## Dependencies
 
-- Python 3.x
+- **Python 3.8 or higher**: The game is written in Python and requires version 3.8 or later for compatibility with features such as file handling and `turtle` graphics.
 - `turtle` library (bundled with Python's standard library)
 
 ## How to Run
