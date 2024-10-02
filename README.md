@@ -2,16 +2,16 @@
 
 ## Introduction
 
-This project is a simple implementation of the classic "Snake Game" using Python's `turtle` graphics library. The player controls the snake, trying to eat food to grow in length while avoiding collisions with the walls or the snake's own body. The game tracks and displays the current score, and it saves the highest score in a local file.
+This project is an implementation of the classic "Snake Game" using Python's `turtle` graphics library. The player controls the snake, trying to eat food to grow in length while avoiding collisions with the walls or the snake's own body. The game tracks and displays the current score, and saves the highest score in a local file.
 
 ## Project Structure
 
 The project consists of four Python files:
 
-- `main.py`: The main file that initializes the game window, handles user input, and runs the game loop.
+- `main.py`: The main file initializes the game window, handles user input, and runs the game loop.
 - `snake.py`: Contains the `Snake` class, which defines the snake's behavior, movement, and interactions.
-- `scoreboard.py`: Contains the `Scoreboard` class, which manages the score display and high score tracking.
 - `food.py`: Contains the `Food` class, which generates and repositions the food for the snake to eat.
+- `scoreboard.py`: Contains the `Scoreboard` class, which manages the score display and high score tracking.
 
 ## Dependencies
 
@@ -58,6 +58,13 @@ This file defines the `Snake` class, which handles:
 - Collision Detection: Detects collisions with the walls or the snake's own body.
 - Resetting: Resets the snake's position and size when the game is restarted.
 
+`food.py`
+ 
+This file defines the `Food` class, which:
+
+- Generates a food item to a random position within the screen's limits.
+- Repositions the food to a new random location when the snake eats it.
+
 `scoreboard.py`
 
 This file defines the `Scoreboard` class, which:
@@ -66,13 +73,6 @@ This file defines the `Scoreboard` class, which:
 - Updates the score each time the snake eats food.
 - Resets the score when the game is over, and updates the high score if necessary.
 - Reads and writes the high score to a file called highscore.json.
-
-`food.py`
- 
-This file defines the `Food` class, which:
-
-- Generates a food item at a random position within the screen's limits.
-- Repositions the food to a new random location when the snake eats it.
 
 ## High Score
 
@@ -85,8 +85,8 @@ The game saves the high score in a `highscore.json` file. This file is read when
 This JSON file contains the integer value of the highest score recorded.
 
 ## Customization
-- Game Speed: The speed of the game can be adjusted by modifying the `time.sleep(0.1)` in the main game loop.
-- Screen Size: The window size is set to 800x800 pixels by default. You can modify it by changing the `sc.setup(width=800, height=800)` line in `main.py`.
+- Game Speed: The game speed can be adjusted by modifying the `time.sleep(0.1)` in the main game loop.
+- Screen Size: Window size is set to 800x800 pixels by default. You can modify it by changing the `sc.setup(width=800, height=800)` line in `main.py`.
 - Snake Color: The snake's color is set to white. You can change this in the `snake.py` file where each turtle object is created with `self.snake_body[-1].color('white')`.
 
 ## Future Enhancements
