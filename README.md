@@ -93,7 +93,6 @@ This JSON file contains the integer value of the highest score recorded.
 - Adding sound effects for eating food and colliding.
 - Implementing different levels with increasing difficulty.
 - Allowing the player to pause and resume the game.
-- Adding more food items with different point values.
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
