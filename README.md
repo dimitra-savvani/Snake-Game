@@ -9,7 +9,7 @@
 - [File Descriptions](#file-descriptions)
 - [High Score](#high-score)
 - [Customization](#customization)
-- [Future Enhancements](#Future Enhancements)
+- [Future Enhancements](#future-enhancements)
 - [License](#license)
 
 
