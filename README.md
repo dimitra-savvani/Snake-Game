@@ -1,5 +1,18 @@
 # Snake Game - README
 
+## Table of Contents
+- [Introduction](#introduction)
+- [Project Structure](#project-structure)
+- [Dependencies](#dependencies)
+- [How to Run](#how-to-run)
+- [Game Controls](#game-controls)
+- [File Descriptions](#file-descriptions)
+- [High Score](#high-score)
+- [Customization](#customization)
+- [Future Enhancements](#Future Enhancements)
+- [License](#license)
+
+
 ## Introduction
 
 This project is an implementation of the classic "Snake Game" using Python's `turtle` graphics library. The player controls the snake, trying to eat food to grow in length while avoiding collisions with the walls or the snake's own body. The game tracks and displays the current score, and saves the highest score in a local file.
@@ -20,7 +33,7 @@ The project consists of four Python files:
 
 ## How to Run
 
-1. Ensure that Python 3 is installed on your system.
+1. Ensure that Python 3.8 or higher is installed on your system.
 2. Download or clone the repository.
 3. Run the game using the command:
 
